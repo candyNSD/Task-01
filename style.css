@@ -1,0 +1,51 @@
+.scroll-container {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+.scroll-detail {
+    display: flex;
+    width: calc(200% + 10px);
+    animation: scroll 20s linear infinite;
+    gap:10px
+}
+.scroll-detail img {
+ width: 200px;
+ height: 200px;
+}
+.scroll-detail img:hover {
+    animation: scroll 20s linear infinite;
+
+   }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.checkBtn {
+    background-color: rgb(61, 112, 212);
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.generateBtn {
+    background-color: rgb(117, 233, 206);
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
